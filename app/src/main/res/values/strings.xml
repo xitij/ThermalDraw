@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Thermal Draw</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Button Text for MainActivity -->
+    <string name="start_button">Click to get shape</string>
+    <string name="capture_button">Click to capture image</string>
+
+    <!-- A list of the possible shapes for the user to create -->
+    <array name="shapes_array">
+        <item>circle</item>
+        <item>square</item>
+        <item>rectangle</item>
+        <item>triangle</item>
+    </array>
 </resources>
