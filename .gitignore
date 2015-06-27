@@ -1,0 +1,13 @@
+.gradle
+/local.properties
+/.idea/*
+.DS_Store
+/build
+/captures
+*.iml
+**/*.iml
+*.swp
+gradle.properties
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.properties
