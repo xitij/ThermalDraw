@@ -1,5 +1,6 @@
 package com.flirone_hackathon.thermaldraw;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         mCaptureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                handleCaptureClick(v);
                 Toast.makeText(MainActivity.this, "Capture button clicked", Toast.LENGTH_SHORT).show();
             }
         });
@@ -61,5 +63,10 @@ public class MainActivity extends AppCompatActivity {
         int idx = mClickCount % shapesArray.length;
         String shapeText = shapesArray[idx];
         mShapeTextView.setText(shapeText);
+    }
+
+    private void handleCaptureClick(View v) {
+        Intent intent = new Intent(this, PreviewCaptureActivity.class);
+        startActivity(intent);
     }
 }
